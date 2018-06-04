@@ -16,10 +16,11 @@ colors
 setopt prompt_subst
 
 $ function git_status() {
+	if ! git status &> /dev/null; then return; fi
 	declare git_st='';
 	git diff --cached --quiet || git_st=$git_st'%F{green}●%f'
 	git diff --quiet || git_st=$git_st'%F{yellow}●%f'
-	# if [ ! -z "$git_st" ]; then git_st='%['$git_st'%]'; fi
+	if [ ! -z "$git_st" ]; then git_st="["$git_st"]"; fi
 	echo $git_st
 	unset git_st
 };
