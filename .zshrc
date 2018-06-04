@@ -13,5 +13,5 @@ promptinit
 compinit
 colors
 
-PROMPT='%F{yellow}%n%F{white}@%F{cyan}%M %F{yellow}%B%~%b%f>'
+PROMPT='%F{yellow}%n%F{white}@%F{cyan}%M %F{yellow}%B%~%b%F{white}>%f'
 RPROMPT='%F{green}%D %B%T%b%f'
