@@ -5,13 +5,13 @@ bindkey -e
 
 zstyle ':completion:*' original true
 zstyle ':completion:*' verbose true 
-zstyle :compinstall filename '/home/discreto/.zshrc'
+zstyle ':completion:*' menu select=2
+# zstyle :compinstall filename '/home/discreto/.zshrc'
 
 autoload -Uz compinit promptinit colors
-zstyle ':completion:*' menu select=2
 promptinit
 compinit
 colors
 
-PROMPT='%F{yellow}%n%F{white}@%F{cyan}%m %F{red}%B%~%b%f> '
+PROMPT='%F{yellow}%n%F{white}@%F{cyan}%M %F{yellow}%B%~%b%f>'
 RPROMPT='%F{green}%D %B%T%b%f'
