@@ -25,7 +25,7 @@ $ function git_status() {
 	declare git_st='';
 	git diff --cached --quiet || git_st=$git_st'%F{green}●%f'
 	git diff --quiet || git_st=$git_st'%F{yellow}●%f'
-	if [ ! -z "$git_st" ]; then git_st="["$git_st"]"; fi
+	if [ ! -z "$git_st" ]; then git_st="%F{white}[%f"$git_st"%F{white}]%f"; fi
 	echo $git_st
 	unset git_st
 };
