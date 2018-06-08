@@ -1,19 +1,24 @@
+# Keep 1000 lines of history within the shell and save it to file
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 bindkey -e
 
-zstyle ':completion:*' original true
-zstyle ':completion:*' verbose true 
-zstyle ':completion:*' menu select=2
-# zstyle :compinstall filename '/home/discreto/.zshrc'
-
-autoload -Uz compinit promptinit colors
-promptinit
-compinit
+# ----- Color output -----
+autoload -Uz colors
 colors
 
-setopt prompt_subst
+# ----- Completion -----
+autoload -Uz compinit
+compinit
+
+zstyle ':completion:*' original true
+zstyle ':completion:*' verbose true
+zstyle ':completion:*' menu select=2
+
+# ----- Prompt -----
+autoload -Uz promptinit
+promptinit
 
 $ function git_status() {
 	if ! git status &> /dev/null; then return; fi
@@ -25,5 +30,6 @@ $ function git_status() {
 	unset git_st
 };
 
+setopt prompt_subst
 PROMPT='%F{yellow}%n%F{white}@%F{cyan}%M %F{yellow}%B%~%b%F{white}>%f'
 RPROMPT='$(git_status) %F{green}%D %B%T%b%f'
