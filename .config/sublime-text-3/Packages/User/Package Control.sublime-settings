@@ -1,0 +1,14 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"C++ Completions",
+		"C++ Snippets",
+		"Indent XML",
+		"Package Control",
+		"xml2json"
+	]
+}
