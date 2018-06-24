@@ -2,6 +2,9 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
+# Disable find history duplicates
+setopt HIST_IGNORE_ALL_DUPS
+# Keymap: e - emax, v - vim
 bindkey -e
 
 # ----- Color output -----
