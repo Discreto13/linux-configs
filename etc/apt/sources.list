@@ -1,0 +1,22 @@
+deb http://security.debian.org/debian-security stretch/updates main contrib non-free
+deb-src http://security.debian.org/debian-security stretch/updates main contrib non-free
+
+# A network mirror was not selected during install.  The following entries
+# are provided as examples, but you should amend them as appropriate
+# for your mirror of choice.
+
+deb http://deb.debian.org/debian/ stretch-updates main contrib non-free
+deb-src http://deb.debian.org/debian/ stretch-updates main contrib non-free
+
+deb http://ftp.debian.org/debian stretch main contrib non-free
+deb-src http://ftp.debian.org/debian stretch main contrib non-free
+
+# stretch-updates, previously known as 'volatile'
+deb http://ftp.debian.org/debian stretch-updates main contrib non-free
+deb-src http://ftp.debian.org/debian stretch-updates main contrib non-free
+
+# latest security updates
+deb http://security.debian.org/ stretch/updates main contrib non-free
+
+# proposed additions
+deb http://ftp.us.debian.org/debian stretch-proposed-updates main contrib non-free
