@@ -1,7 +1,9 @@
 {
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"theme": "Default.sublime-theme",
 	"trim_trailing_white_space_on_save": true
 }
