@@ -54,4 +54,7 @@ sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install sublime-text
 
+echo "Install g++"
+sudo apt-get install g++
+
 echo 'Need to reboot'
