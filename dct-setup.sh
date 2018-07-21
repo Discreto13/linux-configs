@@ -57,4 +57,8 @@ sudo apt-get install sublime-text
 echo "Install g++"
 sudo apt-get install g++
 
+echo "Update and upgrade applications"
+sudo apt-get update
+sudo apt-get upgrade
+
 echo 'Need to reboot'
