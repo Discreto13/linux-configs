@@ -11,8 +11,9 @@ cd ~; git clone https://github.com/discreto13/linux-configs
 ln -vsf ~/linux-configs/home/user/.gitconfig ~/
 
 #xfce settings
+echo "XFCE config"
 ln -vsf ~/linux-configs/home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-cp -vf ~/linux-configs/home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
+cp -v ~/linux-configs/home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 
 echo "Install ZSH"
 sudo apt-get install zsh
