@@ -61,4 +61,7 @@ echo "Update and upgrade applications"
 sudo apt-get update
 sudo apt-get upgrade
 
+echo "Install net-tools"
+sudo apt-get install net-tools
+
 echo 'Need to reboot'
