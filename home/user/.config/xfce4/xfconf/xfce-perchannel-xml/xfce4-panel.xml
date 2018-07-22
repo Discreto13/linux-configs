@@ -20,12 +20,12 @@
         <value type="int" value="19"/>
         <value type="int" value="3"/>
         <value type="int" value="23"/>
-        <value type="int" value="20"/>
-        <value type="int" value="12"/>
         <value type="int" value="10"/>
         <value type="int" value="13"/>
         <value type="int" value="16"/>
         <value type="int" value="2"/>
+        <value type="int" value="12"/>
+        <value type="int" value="20"/>
         <value type="int" value="5"/>
         <value type="int" value="14"/>
         <value type="int" value="27"/>
@@ -44,6 +44,15 @@
       <property name="mode" type="uint" value="1"/>
       <property name="length" type="uint" value="97"/>
       <property name="position-locked" type="bool" value="true"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="6"/>
+        <value type="int" value="8"/>
+        <value type="int" value="1"/>
+        <value type="int" value="4"/>
+        <value type="int" value="7"/>
+        <value type="int" value="11"/>
+      </property>
+      <property name="autohide-behavior" type="uint" value="1"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -55,6 +64,7 @@
     <property name="plugin-12" type="string" value="netload"/>
     <property name="plugin-13" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="orage"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="task manager"/>
@@ -87,6 +97,40 @@
       <property name="tweaks" type="empty">
         <property name="never-confirm-history-clear" type="bool" value="false"/>
         <property name="popup-at-pointer" type="bool" value="false"/>
+      </property>
+      <property name="settings" type="empty">
+        <property name="show-qr-code" type="bool" value="false"/>
+        <property name="enable-actions" type="bool" value="false"/>
+      </property>
+    </property>
+    <property name="plugin-1" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15322056451.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-6" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15322056613.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15322060745.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-4" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15322180151.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15322180222.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-11" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15322180273.desktop"/>
       </property>
     </property>
   </property>
