@@ -10,6 +10,10 @@ echo "git clone linux-configs"
 cd ~; git clone https://github.com/discreto13/linux-configs
 ln -vsf ~/linux-configs/home/user/.gitconfig ~/
 
+echo "Create link to sources"
+sudo ln -vsf ~/linux-configs/etc/apt/sources.list /etc/apt/
+sudo ln -vsf ~/linux-configs/etc/apt/sources.list.d /etc/apt/
+
 #xfce settings
 echo "XFCE config"
 ln -vsf ~/linux-configs/home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
@@ -49,7 +53,7 @@ sudo apt-get install chromium
 
 echo "Install sublime-text"
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+# echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install sublime-text
