@@ -61,6 +61,9 @@ sudo apt-get install sublime-text
 echo "Install g++"
 sudo apt-get install g++
 
+echo "Install make"
+sudo apt-get install make
+
 echo "Update and upgrade applications"
 sudo apt-get update
 sudo apt-get upgrade
