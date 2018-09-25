@@ -45,6 +45,15 @@ sudo apt-get install thunderbird
 echo "Install meld"
 sudo apt-get install meld
 
+echo "Install screen"
+sudo apt-get install screen
+
+echo "Install tmux (child screen)"
+sudo apt-get install tmux
+
+echo "Install lm_sensors (command: sensors)"
+sudo apt-get install lm-sensors
+
 echo "Install mysql"
 sudo apt-get install mysql-client mysql-workbench
 
@@ -63,6 +72,9 @@ sudo apt-get install g++
 
 echo "Install make"
 sudo apt-get install make
+
+echo "Install bluetooth"
+sudo apt-get install bluetooth blueman bluez pulseaudio-module-bluetooth
 
 echo "Update and upgrade applications"
 sudo apt-get update
