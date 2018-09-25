@@ -83,4 +83,7 @@ sudo apt-get upgrade
 echo "Install net-tools"
 sudo apt-get install net-tools
 
+echo "Install curl"
+sudo apt-get install curl
+
 echo 'Need to reboot'
