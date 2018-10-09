@@ -2,3 +2,7 @@
 [user]
 	name = Yegor Shashko
 	email = yegor.shashko@gmail.com
+[alias]
+	st = status
+	br = branch
+	co = checkout
