@@ -36,3 +36,6 @@ $ function git_status() {
 setopt prompt_subst
 PROMPT='%F{yellow}%n%F{white}@%F{cyan}%M %F{yellow}%B%~%b%F{white}>%f'
 RPROMPT='$(git_status) %F{green}%D %B%T%b%f'
+
+# ----- Exports -----
+export EDITOR=vim
