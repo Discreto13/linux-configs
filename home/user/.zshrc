@@ -39,3 +39,8 @@ RPROMPT='$(git_status) %F{green}%D %B%T%b%f'
 
 # ----- Exports -----
 export EDITOR=vim
+
+# ----- Aliases -----
+alias grep='grep --color=auto'
+alias ls='ls --color=auto'
+alias ll='ls -la'
