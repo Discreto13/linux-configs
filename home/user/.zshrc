@@ -25,9 +25,9 @@ promptinit
 
 $ function git_status() {
 	if ! git status &> /dev/null; then return; fi
-	declare git_st='';
-	git diff --cached --quiet || git_st=$git_st'%F{green}●%f'
-	git diff --quiet || git_st=$git_st'%F{yellow}●%f'
+	declare git_st="%F{magenta}$(git branch | grep \* | cut -d ' ' -f2-)%f";
+	git diff --cached --quiet || git_st='%F{green}●%f'$git_st
+	git diff --quiet || git_st='%F{yellow}●%f'$git_st
 	if [ ! -z "$git_st" ]; then git_st="%F{white}[%f"$git_st"%F{white}]%f"; fi
 	echo $git_st
 	unset git_st
