@@ -6,4 +6,4 @@
 	st = status
 	br = branch
 	co = checkout
-	ls = log --pretty=format:"%Cred%h\\ %Creset|\\ %Cblue%ad\\ %Creset-\\ %C(yellow)%s\\ %Creset[%Cgreen%cn%Creset]" --date=short
+	ls = log --pretty=format:"%Cred%h\\ %Creset|\\ %Cblue%ad\\ %Creset-\\ %C(yellow)%s\\ %Creset[%Cgreen%an%Creset]" --date=short
