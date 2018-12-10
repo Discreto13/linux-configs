@@ -1,9 +1,13 @@
-# Keep 1000 lines of history within the shell and save it to file
+# Keep 10000000 lines of history within the shell and save it to file
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-# Disable find history duplicates
-setopt HIST_IGNORE_ALL_DUPS
+HISTSIZE=10000000
+SAVEHIST=10000000
+setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a duplicate.
+setopt HIST_IGNORE_SPACE         # Don't record an entry starting with a space.
+# setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
+# setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
+# setopt SHARE_HISTORY             # Share history between all sessions.
+
 # Keymap: e - emax, v - vim
 bindkey -e
 
