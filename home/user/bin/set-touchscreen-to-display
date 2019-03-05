@@ -1,0 +1,5 @@
+#!/bin/sh
+
+TOUCH_ID=$(xinput | grep 'Melfas LGD AIT Touch Controller' | sed 's/^.*id=\([0-9]*\).*\[.*\].*$/\1/g')
+
+xinput map-to-output $TOUCH_ID DP-1
