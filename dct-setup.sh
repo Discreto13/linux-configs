@@ -17,7 +17,6 @@ sudo ln -vsf ~/linux-configs/etc/apt/sources.list.d /etc/apt/
 #xfce settings
 echo "XFCE config"
 ln -vsf ~/linux-configs/home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
-cp -v ~/linux-configs/home/user/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml ~/.config/xfce4/xfconf/xfce-perchannel-xml/
 
 echo "Install ZSH"
 sudo apt-get install zsh
