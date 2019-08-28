@@ -7,3 +7,4 @@
 	br = branch
 	co = checkout
 	ls = log --pretty=format:"%Cred%h\\ %Creset|\\ %Cblue%ad\\ %Creset-\\ %C(yellow)%s\\ %Creset[%Cgreen%an%Creset]" --date=short
+	permission-reset = !git diff -p -R --no-color | grep -E \"^(diff|(old|new) mode)\" --color=never | git apply
